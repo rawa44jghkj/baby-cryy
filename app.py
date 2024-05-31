@@ -9,7 +9,7 @@ Original file is located at
 
 
 
-!pip install librosa==0.10.1 resampy
+
 
 import os
 import pickle

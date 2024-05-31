@@ -1,0 +1,10 @@
+gunicorn
+numpy
+flask
+joblib
+scikit-learn
+tensorflow
+librosa
+pandas
+pickle
+pyngrok

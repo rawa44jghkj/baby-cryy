@@ -6,4 +6,4 @@ scikit-learn
 tensorflow
 librosa
 pandas
-pyngrok
+

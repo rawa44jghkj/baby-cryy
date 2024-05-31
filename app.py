@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1mVExqECJowfsqsefrSLvt6NevCRcBfBc
 """
 
-!pip install pyngrok
+
 
 !pip install librosa==0.10.1 resampy
 
@@ -19,10 +19,7 @@ import pandas as pd
 from tensorflow import keras
 from flask import Flask, request, jsonify
 
-from pyngrok import ngrok
 
-# Replace 'your_authtoken' with your actual Ngrok authtoken
-ngrok.set_auth_token('2gFCPRnk2xNA9DskHPZDXMZxf1x_75bEkaoWLQgr82DmqGjiY')
 
 
 app = Flask(__name__)
@@ -76,8 +73,5 @@ def predict():
             })
     except Exception as e:
         print(e)
-if __name__ == '__main__':
-  public_url = ngrok.connect(5000)
-  print(public_url)
-  app.run()
+
 
